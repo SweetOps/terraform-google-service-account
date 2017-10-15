@@ -23,9 +23,9 @@ module "s3_service_account" {
 
 ## Outputs
 
-| Name                        | Description                                      |
-|:----------------------------|:-------------------------------------------------|
-| `iam_policy_etag`           | The etag of the project's IAM policy.            |
-| `service_account_email`     | The e-mail address of the service account.       |
-| `service_account_name`      | The fully-qualified name of the service account. |
-| `service_account_unique_id` | The unique id of the service account.            |
+| Name              | Description                                      |
+|:------------------|:-------------------------------------------------|
+| `email`           | The e-mail address of the service account.       |
+| `iam_policy_etag` | The etag of the project's IAM policy.            |
+| `name`            | The fully-qualified name of the service account. |
+| `unique_id`       | The unique id of the service account.            |

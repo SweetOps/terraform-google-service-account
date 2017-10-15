@@ -1,14 +1,14 @@
-output "service_account_email" {
+output "email" {
   value       = "${google_service_account.default.email}"
   description = "The e-mail address of the service account."
 }
 
-output "service_account_name" {
+output "name" {
   value       = "${google_service_account.default.name}"
   description = "The fully-qualified name of the service account."
 }
 
-output "service_account_unique_id" {
+output "unique_id" {
   value       = "${google_service_account.default.unique_id}"
   description = "The unique id of the service account."
 }
