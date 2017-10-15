@@ -5,7 +5,8 @@ Terraform module : GCP : for creation service account.
 
 ```terraform
 module "s3_service_account" {
-  account_id = "some_name"
+  source     = "git::https://github.com/SweetOps/terraform-google-service-account.git?ref=master"
+  account_id = "some-name"
   role       = "roles/storage.objectViewer"
 }
 ```
