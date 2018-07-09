@@ -8,7 +8,7 @@ variable "display_name" {
 }
 
 variable "project" {
-  description = "GCE project name"
+  description = "GCP project id."
   default     = ""
 }
 
