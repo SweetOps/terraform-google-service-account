@@ -3,4 +3,5 @@ module "my_awesome_user" {
   name      = "user"
   stage     = "production"
   namespace = "sweetops"
+  role      = "roles/storage.objectViewer"
 }
