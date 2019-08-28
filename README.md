@@ -9,7 +9,6 @@ module "s3_service_account" {
   name      = "awesome"
   stage     = "production"
   namespace = "sweetops"
-  role       = "roles/storage.objectViewer"
 }
 ```
 
@@ -20,10 +19,8 @@ module "s3_service_account" {
 |:------------|:------------------------------------------------------------------------------------------------|:------:|:--------:|:--------:|
 | name        | Solution name, e.g. 'app' or 'jenkins'                                                          | string |   n/a    |   yes    |
 | namespace   | Namespace, which could be your organization name or abbreviation, e.g. 'eg' or 'cp'             | string |   n/a    |   yes    |
-| role        | The role/permission that will be granted to the members.                                        | string |   n/a    |   yes    |
 | stage       | Stage, e.g. 'prod', 'staging', 'dev', OR 'source', 'build', 'test', 'deploy', 'release'         | string |   n/a    |   yes    |
 | attributes  | Additional attributes (e.g. `1`)                                                                |  list  |   `[]`   |    no    |
-| context     | Default context to use for passing state between label invocations                              |  map   |   `{}`   |    no    |
 | delimiter   | Delimiter to be used between `namespace`, `environment`, `stage`, `name` and `attributes`       | string |  `"-"`   |    no    |
 | enabled     | Set to false to prevent the module from creating any resources                                  | string | `"true"` |    no    |
 | environment | Environment, e.g. 'prod', 'staging', 'dev', 'pre-prod', 'UAT'                                   | string |   `""`   |    no    |
