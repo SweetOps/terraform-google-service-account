@@ -29,7 +29,7 @@ action "terraform-init" {
   secrets = ["GITHUB_TOKEN"]
 
   env = {
-    TF_ACTION_WORKING_DIR = "./examples/basic"
+    TF_ACTION_WORKING_DIR = "./tests"
   }
 }
 
@@ -39,7 +39,7 @@ action "terraform-validate" {
   secrets = ["GITHUB_TOKEN"]
 
   env = {
-    TF_ACTION_WORKING_DIR = "./examples/basic"
+    TF_ACTION_WORKING_DIR = "./tests"
   }
 }
 
