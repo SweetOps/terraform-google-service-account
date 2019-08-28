@@ -3,7 +3,6 @@ module "my_awesome_user" {
   name      = "user"
   stage     = "production"
   namespace = "sweetops"
-  role      = "roles/storage.objectViewer"
 }
 
 module "my_awesome_user_1" {
@@ -12,7 +11,6 @@ module "my_awesome_user_1" {
   attributes = ["1"]
   stage      = "production"
   namespace  = "sweetops"
-  role       = "roles/storage.objectViewer"
   enabled    = "false"
 }
 
@@ -22,6 +20,5 @@ module "my_awesome_user_3" {
   stage      = "production"
   namespace  = "sweetops"
   attributes = ["2"]
-  role       = "roles/storage.objectViewer"
   enabled    = "true"
 }
