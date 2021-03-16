@@ -5,8 +5,8 @@ Terraform module to provision service account with normalized name.
 ## Usage
 
 ```terraform
-module "s3_service_account" {
-  source     = "git::https://github.com/SweetOps/terraform-google-service-account.git?ref=master"
+module "service_account" {
+  source    = "git::https://github.com/SweetOps/terraform-google-service-account.git?ref=master"
   name      = "awesome"
   stage     = "production"
   namespace = "sweetops"
