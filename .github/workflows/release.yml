@@ -1,0 +1,17 @@
+name: Release
+on:
+  push:
+    tags:
+      - "v*"
+jobs:
+  release-notary:
+    name: Release-notary
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Release Notary Action
+        uses: commitsar-app/release-notary@v0.8.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
