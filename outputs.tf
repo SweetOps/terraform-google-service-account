@@ -36,5 +36,4 @@ output "public_key" {
 output "private_key" {
   value       = join("", google_service_account_key.default.*.private_key)
   description = "The private key in JSON format, base64 encoded."
-  sensitive   = true
 }

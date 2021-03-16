@@ -27,7 +27,7 @@ data "google_iam_policy" "default" {
     for_each = toset(var.roles)
     content {
       role    = binding.key
-      members = format("serviceAccount:%s", join("", google_service_account.default.*.email))
+      members = [format("serviceAccount:%s", join("", google_service_account.default.*.email))]
     }
   }
 }
