@@ -1,11 +1,6 @@
 name: Lint PR
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - edited
-      - synchronize
+  pull_request_target:
 
 jobs:
   main:
@@ -38,3 +33,4 @@ jobs:
             * **refactor**: A code change that neither fixes a bug nor adds a feature
             * **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
             * **test**: Adding missing tests or correcting existing tests
+            * **chore**: No production code change
